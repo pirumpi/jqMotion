@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//js.leapmotion.com/leap-0.4.1.min.js"></script>
+    <script src="//jss.name/jqmotion.0.1.min.js"></script>
+  </head>
+
+  <body>
+  <h1 class="text-center">jqMotion</h1>
+  <p class="text-center">Supported action: <b>swipeRight</b>, <b>swipeLeft</b></p>
+    <div id="container">
+      <div id="card">
+        <section class="front">Front</section>
+        <section class="back">Back</section>
+      </div>
+    </div>
+    
+    <script>
+      //default settings
+      $.jqMotion();
+      
+      var $card = $('#card');
+      
+      $(document)
+      .on('swipeRight', function(){
+          $card.addClass('flipped');
+      })
+      .on('swipeLeft', function(){
+          $card.removeClass('flipped');
+      });
+    </script>
+  </body>
+
+</html>
