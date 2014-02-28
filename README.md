@@ -98,15 +98,15 @@ For the DOM element object you have the following options:
 ##jqMotion's Events
 
 * circle
-** circleLeft
-** circleRight
+    * circleLeft
+    * circleRight
 * swipe
-** swipteLeft
-** swipeRight
+    * swipteLeft
+    * swipeRight
 * sreenTap
 * keyTap
 * grap
-** grapRelease
+    * grapRelease
     
 Each event passes the gesture object to the function handler as a second parameter
 
